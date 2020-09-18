@@ -26,8 +26,8 @@ const BASE_URL = 'https://sds1-jean.herokuapp.com';
 const Charts = () =>{
 
     const [ barChartData, setBarChartData] = useState<BarChartData[]>([]);
-    const [ barPlatformChartData, setPlatformChartData] = useState<PieChartData>(initialPieData);
-    const [ barGenderChartData, setGenderChartData] = useState<PieChartData>(initialPieData);
+    const [ barPlatformChartData, setBarPlatformChartData] = useState<PieChartData>(initialPieData);
+    const [ barGenderChartData, setBarGenderChartData] = useState<PieChartData>(initialPieData);
 
     useEffect(() =>{
 
@@ -40,10 +40,10 @@ const Charts = () =>{
             setBarChartData(barData);
 
             const platformChartData = getPlatformChartData(recordsResponse.data.content);
-            setPlatformChartData(platformChartData);
+            setBarPlatformChartData(platformChartData);
 
             const genderChartData = getGenderChartData(recordsResponse.data.content);
-            setGenderChartData(genderChartData);
+            setBarGenderChartData(genderChartData);
 
         }
 
