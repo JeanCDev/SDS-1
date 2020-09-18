@@ -7,7 +7,7 @@ import axios from 'axios';
 import { buildBarSeries, getGenderChartData, getPlatformChartData } from './helpers'
 
 type PieChartData = {
-    label: string[];
+    labels: string[];
     series: number[];
 }
 
@@ -17,7 +17,7 @@ type BarChartData ={
 }
 
 const initialPieData ={
-    label: [], 
+    labels: [], 
     series: []
 }
 
