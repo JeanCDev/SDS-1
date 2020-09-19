@@ -20,4 +20,9 @@ In this event we developed a website and Android app for researching people favo
 # Final project Record pages filled inputs:
 ![Graphs Page](https://i.imgur.com/SRPG958.png)
 
-
+# Links
+See the production version on the web:
+<ul>
+  <li>Netlify App: https://sds-1-jean.netlify.app/</li>
+  <li>Vercel App: https://sds-1.vercel.app/</li>
+</ul>
